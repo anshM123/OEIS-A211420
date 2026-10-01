@@ -1,0 +1,32 @@
+== formal-conjectures commit: ab0addc45f699bdd0b7cc58efa5140a72f101a9e
+== statement file git blob: 25daf9537a16340cf22352b763117a47576b5d48  (pull request 6426: 25daf953...)
+== 1. Statement.lean (unmodified pull-request file, repository options)
+== compiling CoreDefs.lean
+== compiling CoreLemmas.lean
+== compiling CoreConj13.lean
+== compiling CoreConj24.lean
+== compiling Core.lean
+== compiling Solution.lean
+== CheckAnswer.lean (definitions agree; types of conjectureN_solved = types of conjectureN; axioms)
+OeisA211420.conjecture1 : ∀ (n : ℕ),
+  n + 1 ∣ 35 * OeisA211420.a n ∧ 2 * n + 1 ∣ 3 * OeisA211420.a n ∧ 3 * n + 1 ∣ 5 * OeisA211420.a n
+OeisA211420.conjecture1_solved : ∀ (n : ℕ),
+  n + 1 ∣ 35 * OeisA211420.a n ∧ 2 * n + 1 ∣ 3 * OeisA211420.a n ∧ 3 * n + 1 ∣ 5 * OeisA211420.a n
+OeisA211420.conjecture2 : ∀ (k r : ℕ),
+  k = 1 ∨ k = 2 ∨ k = 3 → 1 ≤ r → ∃ C, 0 < C ∧ ∀ (n : ℕ), (k * n + 1).ascFactorial r ∣ C * OeisA211420.a n
+OeisA211420.conjecture2_solved : ∀ (k r : ℕ),
+  k = 1 ∨ k = 2 ∨ k = 3 → 1 ≤ r → ∃ C, 0 < C ∧ ∀ (n : ℕ), (k * n + 1).ascFactorial r ∣ C * OeisA211420.a n
+OeisA211420.conjecture3 : ∀ (n : ℕ), 8 * ↑n - 1 ∣ ↑(OeisA211420.a n)
+OeisA211420.conjecture3_solved : ∀ (n : ℕ), 8 * ↑n - 1 ∣ ↑(OeisA211420.a n)
+OeisA211420.conjecture4 : ∀ (r : ℕ),
+  ∃ K, 0 < K ∧ ∀ (n : ℕ), OeisA211420.oddDescendingProduct n r ∣ ↑(OeisA211420.a n) * K
+OeisA211420.conjecture4_solved : ∀ (r : ℕ),
+  ∃ K, 0 < K ∧ ∀ (n : ℕ), OeisA211420.oddDescendingProduct n r ∣ ↑(OeisA211420.a n) * K
+'OeisA211420.conjecture1_solved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OeisA211420.conjecture2_solved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OeisA211420.conjecture3_solved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OeisA211420.conjecture4_solved' depends on axioms: [propext, Classical.choice, Quot.sound]
+== forbidden keywords (sorry/admit/native_decide/axiom) outside the statement file:
+none
+== done
+== exit 0, 237 s

@@ -1,0 +1,11 @@
+L0 phi is 24-periodic with the stated table: OK
+L1 c*n/q = (24n/q)/(24/c): OK (n<400, q<400)
+phi-sum = v_p(a(n)) exactly for n<120: OK
+termwise lemmas (8n-1,q>3), (n+1,q>=8), (2n+1,q>=4), (3n+1,q>=4,q!=5): OK 8994000
+conj2 lemma: OK
+conj4 lemma: OK
+escape lemmas p=3 (thr 9) and p=2 (thr 6): OK for n<200000
+step lemmas: OK
+T_{e+1} claims: OK for n <= 200000
+conj1 & conj3 valuation check n <= 200000: failures = 0
+conj1 & conj3 exact integers n < 400: OK
